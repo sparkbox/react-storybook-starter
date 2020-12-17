@@ -1,0 +1,61 @@
+# Sparkbox React Storybook Starter
+
+This project utilizes [Next.js][next], [TypeScript][typescript], and [Storybook][storybook] to create [React][react] components and accompanying demo pages.
+
+## Quick Start
+
+To begin development:
+
+1. `npm i` to install dependencies.
+1. `npm run build:next` to build the Next app.
+1. `npm run start:dev` to start a development server.
+
+To view the Storybook Components:
+
+1. `npm run storybook` to start the Storybook server.
+1. Navigate to [localhost:6006][6006]
+
+To build a "production" site with a published version of Storybook:
+
+1. `npm run build` to build both the Next app and compile static Storybook pages to `/public/storybook/`
+1. `npm start` to start the server *without* a watch task.
+1. Alternatively, `npm run start:prod` to do both.
+1. Navigate to [localhost:3000][3000] to see the Pages index.
+1. Head to [localhost:3000/storybook/index.html][3000/storybook] to see your static Storybook.
+
+## Code Quality
+
+### Tests
+
+This project utilizes [Jest][jest] and [Enzyme][enzyme] to run React-based unit tests.
+
+- To run the tests, `npm test`.
+- To run only the unit tests, `npm run test:unit`.
+- If you'd like to see code coverage, `npm run test:coverage`.
+- If you want to run the tests with a server, `npm run test:watch`.
+- To update any Snapshots, `npm run test:update`.
+
+### Linting
+
+We use [ESLint][eslint] with [the Sparkbox ESLint config][eslintsparkbox] for JavaScript linting.
+
+- By default, the linter(s) run with our test script, `npm test`.
+- To run just the linter(s), `npm run lint`.
+
+### Continuous Integration
+
+This template comes with a starter config for [CircleCI][circleci] in `.circleci/config.yml`. You may wish to modify this to suit your own needs.
+
+
+[next]: https://nextjs.org/
+[storybook]: https://storybook.js.org/
+[typescript]: https://www.typescriptlang.org/
+[react]: https://reactjs.org/
+[3000]: http://localhost:3000/
+[3000/storybook]: http://localhost:3000/storybook/index.html
+[6006]: http://localhost:6006/
+[jest]: https://jestjs.io/en/
+[enzyme]: https://enzymejs.github.io/enzyme/docs/guides/jest.html
+[eslint]: https://github.com/eslint/eslint
+[eslintsparkbox]: https://www.npmjs.com/package/@sparkbox/eslint-config-sparkbox
+[circleci]: https://circleci.com/
