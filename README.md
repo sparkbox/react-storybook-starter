@@ -23,6 +23,14 @@ To build a "production" site with a published version of Storybook:
 1. Navigate to [localhost:3000][3000] to see the Pages index.
 1. Head to [localhost:3000/storybook/index.html][3000/storybook] to see your static Storybook.
 
+## Storybook Addons
+
+This project comes with two add-ons, [Storybook Docs][storybook-docs] and [Storybook Backgrounds][storybook-backgrounds] (with black and white by default). These powerful add-ons should be enough to get you started with most projects.
+
+## Styles
+
+As your CSS solution is likely to be tied to individual preference, at this time, this repository does not come with a way to style components. In the future we plan to offer scripts for installing either a SCSS or CSS-in-JS option. For now, you are on your own.
+
 ## Code Quality
 
 ### Tests
@@ -59,3 +67,5 @@ This template comes with a starter config for [CircleCI][circleci] in `.circleci
 [eslint]: https://github.com/eslint/eslint
 [eslintsparkbox]: https://www.npmjs.com/package/@sparkbox/eslint-config-sparkbox
 [circleci]: https://circleci.com/
+[storybook-docs]: https://storybook.js.org/docs/react/writing-docs/docs-page
+[storybook-backgrounds]: https://storybook.js.org/docs/react/essentials/backgrounds
