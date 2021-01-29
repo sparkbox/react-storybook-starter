@@ -23,7 +23,7 @@ To build a "production" site with a published version of Storybook:
 1. Navigate to [localhost:3000][3000] to see the Pages index.
 1. Head to [localhost:3000/storybook/index.html][3000/storybook] to see your static Storybook.
 
-## Storybook Addons
+## Storybook Add-ons
 
 This project comes with two add-ons, [Storybook Docs][storybook-docs] and [Storybook Backgrounds][storybook-backgrounds] (with black and white by default). These powerful add-ons should be enough to get you started with most projects.
 
@@ -35,7 +35,7 @@ As your CSS solution is likely to be tied to individual preference, at this time
 
 ### Tests
 
-This project utilizes [Jest][jest] and [Enzyme][enzyme] to run React-based unit tests.
+This project utilizes [Jest][jest] with [React Testing Library][testing-library] to run unit tests.
 
 - To run the tests, `npm test`.
 - To run only the unit tests, `npm run test:unit`.
@@ -63,9 +63,9 @@ This template comes with a starter config for [CircleCI][circleci] in `.circleci
 [3000/storybook]: http://localhost:3000/storybook/index.html
 [6006]: http://localhost:6006/
 [jest]: https://jestjs.io/en/
-[enzyme]: https://enzymejs.github.io/enzyme/docs/guides/jest.html
 [eslint]: https://github.com/eslint/eslint
 [eslintsparkbox]: https://www.npmjs.com/package/@sparkbox/eslint-config-sparkbox
 [circleci]: https://circleci.com/
 [storybook-docs]: https://storybook.js.org/docs/react/writing-docs/docs-page
 [storybook-backgrounds]: https://storybook.js.org/docs/react/essentials/backgrounds
+[testing-library]: https://testing-library.com/docs/react-testing-library/intro/

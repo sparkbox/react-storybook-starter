@@ -11,9 +11,6 @@ module.exports = {
   // An array of file extensions your modules use
   moduleFileExtensions: ['js', 'json', 'jsx', 'tsx', 'ts'],
 
-  // The paths to modules that run some code to configure or set up the testing environment before each test
-  setupFiles: ['<rootDir>/enzyme.config.js'],
-
   // The test environment that will be used for testing
   testEnvironment: 'jsdom',
 
@@ -31,4 +28,7 @@ module.exports = {
 
   // Indicates whether each individual test should be reported during the run
   verbose: false,
+
+  // Runs the setup file for Jest-Dom
+  setupFilesAfterEnv: ["./jest.setup.js"],
 };

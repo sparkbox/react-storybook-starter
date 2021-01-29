@@ -1,19 +1,22 @@
 import * as React from "react";
-import { shallow, render } from "enzyme";
-import toJson from 'enzyme-to-json';
+import { render, cleanup, screen} from '@testing-library/react';
+import '@testing-library/jest-dom';
+import TestRenderer from 'react-test-renderer';
 
 import Button from "../components/Button";
 
 describe('the Button component', () => {
-  it('matches the Snapshot', () => {
-    const result = render(<Button text="Test Button" />);
-    expect(toJson(result)).toMatchSnapshot();
+  test('matches the Snapshot', () => {
+    const tree = TestRenderer
+    .create(<Button text="Test Button" />)
+    .toJSON();
+    expect(
+      (tree)
+    ).toMatchSnapshot();
   });
 
-  it('renders a button element', () => {
-      const result = shallow(<Button text="Test Button" />).contains(
-        <button type="button">Test Button</button>
-      );
-      expect(result).toBeTruthy();
+  test('renders a button element', () => {
+    const result = render(<Button text="Test Button" />);
+    expect(screen.getByRole('button')).toHaveTextContent('Test Button')
   });
 });
