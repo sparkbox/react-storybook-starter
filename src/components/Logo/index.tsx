@@ -1,6 +1,6 @@
-import * as React from 'react';
+import React, { ReactElement } from 'react';
 
-export function Logo() {
+export function Logo(): ReactElement {
   return (
     <a href="https://sparkbox.com">
       <svg xmlns="http://www.w3.org/2000/svg" width="153" height="198" viewBox="142.638 190.216 319.665 351.566" aria-labelledby="logo-title" role="img">
