@@ -3,7 +3,7 @@ import { render, cleanup, screen} from '@testing-library/react';
 import '@testing-library/jest-dom';
 import TestRenderer from 'react-test-renderer';
 
-import Button from "../components/Button";
+import Button from ".";
 
 describe('the Button component', () => {
   test('matches the Snapshot', () => {
