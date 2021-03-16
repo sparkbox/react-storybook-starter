@@ -1,6 +1,10 @@
 # Sparkbox React Storybook Starter
 
-This project utilizes [Next.js][next], [TypeScript][typescript], and [Storybook][storybook] to create [React][react] components and accompanying demo pages.
+This project utilizes [Next.js][next], [TypeScript][typescript], and [Storybook][storybook] to create [React][react] components.
+
+The Next-based website can be either a documentation page for a Storybook-based design system, or a full production site with component documentation. For Storybook projects without the requirement of a full app, Next may be unnecessary, thanks to the robust capabilities of Storybook.
+
+An excellent free option for deploying this finished site is [Netlify][netlify].
 
 ## Quick Start
 
@@ -22,6 +26,12 @@ To build a "production" site with a published version of Storybook:
 1. Alternatively, `npm run start:prod` to do both.
 1. Navigate to [localhost:3000][3000] to see the Pages index.
 1. Head to [localhost:3000/storybook/index.html][3000/storybook] to see your static Storybook.
+
+**Note:** Your project can with or without a deployed Storybook instance (`/storybook/index.html` from the Next App). If you'd like to remove the static Storybook from your deploy, update the build task to be:
+
+```json
+ "build": "npm run build:next",
+```
 
 ## Storybook Add-ons
 
@@ -69,3 +79,4 @@ This template comes with a starter config for [CircleCI][circleci] in `.circleci
 [storybook-docs]: https://storybook.js.org/docs/react/writing-docs/docs-page
 [storybook-backgrounds]: https://storybook.js.org/docs/react/essentials/backgrounds
 [testing-library]: https://testing-library.com/docs/react-testing-library/intro/
+[netlify]: https://www.netlify.com/
